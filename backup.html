@@ -2,9 +2,9 @@
 
 
 <script>
-var b = sessionStorage.getItem('onee');
+var b = window.localStorage.getItem('onee')
 if (b != true) {
-    document.location.href='index.html'
+    window.close()
 }
 </script>
 
