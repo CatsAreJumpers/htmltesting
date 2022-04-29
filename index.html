@@ -2,15 +2,15 @@
 
 
 <script>
-    var onee = true;
-    sessionStorage.setItem('onee', onee);
+    window.localStorage.setItem('onee', false);
     function myfuction() {
     var pcbuildingsimulator = document.getElementById('696969');
     var menkissinge04bus = pcbuildingsimulator.value;
     if (menkissinge04bus == "pussycat") {
         alert('dem hello')
         document.location.href='backup.html'
-        onee = true;
+        window.localStorage.setItem('onee', false);
+        
     }
     alert("nothing special just html testing")
 } 
