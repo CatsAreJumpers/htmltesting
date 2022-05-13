@@ -1,24 +1,10 @@
+<h1 style="color: blueviolet; text-align: center; font-size: 30px;">Admin Menu</h1>
 
-
+<button onclick="GenerateCode()" style="margin-top: 10px; font-size: 20px; border-color: blue; text-align: center;">GenerateCode</button>
 
 <script>
-var b = window.localStorage.getItem('onee')
-if (b !="on") {
-    document.location.href='index.html'
-}
-window.localStorage.setItem('onee', "e");
+    function GenerateCode(){
+        var randomcode = Math.random().toString(36).slice(-8);
+        alert(randomcode);
+    }
 </script>
-
-<center><body>
-    <Header style="color: blueviolet; font-size: 20px; font: bold;">Welcome</Header>
-</body></center>>
-
-
-
-<center><button style="margin-top: 10px; font-size: 20px; border-color: blue;" onclick="document.location.href='ShooterGames.html'">Shooter Games</button></center>
-<center><button style="margin-top: 10px; font-size: 20px; border-color: blue;" onclick="document.location.href='ActionGames.html'">Action Games</button></center>
-<center><button style="margin-top: 10px; font-size: 20px; border-color: blue;" onclick="document.location.href='SkillGames.html'">Skill Games</button></center>
-<center><button style="margin-top: 10px; font-size: 20px; border-color: blue;" onclick="document.location.href='RetroGames.html'">Retro Games</button></center>
-<center><button style="margin-top: 10px; font-size: 20px; border-color: blue;" onclick="document.location.href='PuzzleGames.html'">Puzzle Games</button></center>
-<center><button style="margin-top: 10px; font-size: 20px; border-color: blue;" onclick="document.location.href='MoviesAndRandomStuff.html'">Movies and Utility/RandomStuff</button></center>
-
