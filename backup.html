@@ -1,10 +1,22 @@
 <h1 style="color: blueviolet; text-align: center; font-size: 30px;">Admin Menu</h1>
 
-<button onclick="GenerateCode()" style="margin-top: 10px; font-size: 20px; border-color: blue; text-align: center;">GenerateCode</button>
 
+<script>
+    var b = window.localStorage.getItem('onee')
+    if (b !="on") {
+        document.location.href='index.html'
+    }
+    </script>
+
+
+
+<center><button onclick="GenerateCode()" style="margin-top: 10px; font-size: 20px; border-color: blue; text-align: center;">GenerateCode</button></center>
 <script>
     function GenerateCode(){
         var randomcode = Math.random().toString(36).slice(-8);
         alert(randomcode);
+        var Variable = '<%=eServerVaraible %>';
+        alert(Variable);
+        
     }
 </script>
